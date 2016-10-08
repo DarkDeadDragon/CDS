@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.start__body {
+    background: url(../img/start_pages.png) 48% 0% no-repeat black;
+    background-size: auto; /* Масштабируем фон */
+}
+
+.index__body {
+    background: black url(../img/blackGrimoire.jpg) center 0% no-repeat;/**/
+    background-size: auto;/*Масштабируем фон */
+}
+
+.body {
+    background: black;
+}
+
+.start__button {
+    overflow: hidden;
+    display: block;
+    width: 10%;
+    height: 4vh;
+    margin-top: 20%; /* Отступ в процентах от верхнего края окна */
+    margin-left: 45%; /* Отступ в процентах от левого края окна */
+    color: darkred;
+    text-align: center;
+    padding: 1vh;
+    font-size: 4vh;
+    text-decoration: none;
+}
+
+.start__button:hover {
+    background-color: darkred;
+    color: white;
+    opacity: 0.5; /* Прозрачность фона */
+}
+
+.top-list__list{
+    overflow: auto;
+    width: 20%;
+    margin-top: 9vh;
+    margin-left: 40%; /* Отступ в процентах от левого края окна */
+    color: darkred;
+    text-align: left;
+    padding: 1vh;
+    font-size: 3vh;
+    background-color: darkgray;
+    opacity: 0.5;
+}
+
+.top-list__list ol{
+    list-style: decimal inside;
+}
+
+.about__content {
+    overflow: auto;
+    width: 60%;
+    margin-top: 9vh;
+    margin-left: 20%; /* Отступ в процентах от левого края окна */
+    color: darkred;
+    text-align: left;
+    padding: 1vh;
+    font-size: 3vh;
+    background-color: darkgray;
+    opacity: 0.3;
+}
