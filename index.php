@@ -25,14 +25,19 @@
 <?php
     if ($page == "" ) {$page = 0;}
     echo "<body class=\"".BodyStyle::$body_style[$page]."\">";
-    echo "<div class=\"header\">";
-    echo "<div class=\"header__logo\">";
-    echo "Catch Demonic Souls!";
-    echo "</div>";
-    Menu::genMenu($page);
-    echo "</div>";
+?>
+    <div class="header">
+    <?php
+        if ($page!=0) echo "<a href=\"index.php?page=0\">";
+    ?>
+    <div class="header__logo">Catch Demonic Souls!</div>
+    <?php
+        if ($page!=0) echo "</a>";
+        Menu::genMenu($page);
+    ?>
+    </div>
+<?php
     if ($page !=0 ) Content::getPage($page);
-
     echo "</body>"
 ?>
 
