@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Leonardo
- * Date: 03.10.2016
- * Time: 23:11
- */
 class Content
 {
     public static $pages = array(
@@ -15,7 +9,7 @@ class Content
     );
 
     public static function getPage($page_number){
-        return file_get_contents(self::$pages[$page_number]);
+        echo file_get_contents("./assest/".self::$pages[$page_number]);
     }
 
 }
